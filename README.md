@@ -49,7 +49,7 @@ Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi wi
 
   
 
-I added four protocols for flash loans:
+The project supports four protocols for flash loans:
 
   
 
@@ -63,7 +63,7 @@ I added four protocols for flash loans:
 
   
 
-The bigger the loan, the higher the fee. So don’t take a huge loan if your wallet balance is low!
+The bigger the loan, the higher the fee. Therefore, avoid taking large loans if your wallet balance is low.
 
   
 
@@ -111,7 +111,7 @@ If the price difference is ≥0.9%, the script triggers a deal. If the differenc
 
   
 
-Here’s how to run my bot:
+Here's how to run the bot:
 
   
 
@@ -249,7 +249,7 @@ node goflash.js
 
   
 
-Hope my bot brings you some profit! If something doesn’t work or you have ideas, drop a note in issues.
+We hope this bot helps you find profitable arbitrage opportunities! If you encounter any issues or have suggestions, please open an issue in the repository.
 
   
 
