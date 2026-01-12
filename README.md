@@ -39,7 +39,7 @@ Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi wi
 
 - Checks ETH/USDC prices on five DeFi platforms.
 
-- Waits for a price difference of **0.9%** or more to avoid losses.
+- Waits for a price difference of **≥0.9%** to avoid losses.
 
 - If a sufficient difference is detected, it triggers arbitrage through the contract.
 
