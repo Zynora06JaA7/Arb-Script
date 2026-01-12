@@ -5,7 +5,7 @@
 
   
 
-Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi with flash loans. Using a smart contract and a local script `goflash.js`, which runs on your computer. Sharing it so you can try it out!
+Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi with flash loans. It uses a smart contract and a local script `goflash.js`, which runs on your computer. I'm sharing it so you can try it out!
 
   
 
@@ -41,7 +41,7 @@ Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi wi
 
 - Waits for a price difference of **0.9%** or more to avoid losses.
 
-- If the difference is there, it triggers arbitrage through the contract.
+- If a sufficient difference is detected, it triggers arbitrage through the contract.
 
   
 
@@ -99,7 +99,7 @@ The script checks ETH/USDC prices on these platforms:
 
   
 
-If the price difference is ≥0.9%, the script triggers a deal. Less than that, it waits to avoid losses.
+If the price difference is ≥0.9%, the script triggers a deal. If the difference is less than that, it waits to avoid losses.
 
   
 
@@ -195,7 +195,7 @@ node goflash.js
 
 - Waits for a difference ≥0.9% and triggers arbitrage through the contract.
 
-- Converts your ETH to USDC before the deal and profit back to ETH after.
+- Converts your ETH to USDC before the deal and converts the profit back to ETH after.
 
   
 
