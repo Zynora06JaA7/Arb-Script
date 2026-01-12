@@ -161,7 +161,7 @@ const  PRIVATE_KEY = "YOUR_PRIVATE_KEY_HERE";
 
 ```
 
-with your key ( **Don’t share it with anyone!** )
+with your key (**Don't share it with anyone!**)
 
   
 
@@ -183,7 +183,7 @@ node goflash.js
 
 - In **Loan Amount in ETH**, set the loan amount (from 10 to the protocol’s max).
 
--  **Careful**: If your wallet balance is <0.1 ETH, don’t take a loan over **10 ETH** — gas won’t cover it!
+-  **Warning**: If your wallet balance is less than 0.1 ETH, avoid taking a loan over **10 ETH**, as your balance may not cover the gas fees required for the transaction.
 
 - Hit **Start Arbitrage** to start.
 
@@ -203,7 +203,7 @@ node goflash.js
 
   
 
--  **Wallet Balance**: For loans over 10 ETH, you need a balance ≥0.1 ETH, or the script won’t let you pick a big loan.
+-  **Wallet Balance**: For loans over 10 ETH, you need a wallet balance of at least 0.1 ETH. The script will prevent you from selecting a large loan amount if your balance is insufficient.
 
 -  **Fees**: You pay trading fees (0.1%), slippage (0.05%), and gas.
 
