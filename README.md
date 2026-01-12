@@ -237,7 +237,7 @@ node goflash.js
 
 - The final profit (`Net profit`) in ETH goes to you, accounting for all costs (flash loan fee, trading fees 0.1%, slippage 0.05%, gas).
 
-- No need to top up any balance anywhere!!!
+- No need to top up any balance anywhere!
 
   
 
